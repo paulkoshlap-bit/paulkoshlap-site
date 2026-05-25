@@ -1,10 +1,4 @@
 import { Link } from 'react-router-dom'
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from 'recharts'
-
-const cpaData = [
-  { name: 'AI Creative System', reduction: 22, fill: '#C8A96E' },
-  { name: 'Vet Chain Campaign', reduction: 17, fill: '#7EC8C8' },
-]
 
 const FRAMEWORK_STEPS = [
   { n: '01', title: 'Goal & Success Alignment', color: '#2D7A5F' },
@@ -18,6 +12,16 @@ const FRAMEWORK_STEPS = [
 
 const CASE_STUDIES = [
   {
+    num: '003',
+    title: 'The Revenue the Platform Couldn\'t See',
+    tag: 'Sono Bello · Instagram',
+    metric: '$50M',
+    metricLabel: 'Incremental Revenue',
+    desc: 'Synthetic control geo test revealed $50M in revenue completely invisible to touch-based attribution — and convinced stakeholders to act on the methodology.',
+    href: '/work/sono-bello',
+    color: '#C8A96E',
+  },
+  {
     num: '001',
     title: 'AI-Powered Creative Strategy System',
     tag: 'Multi-Vertical',
@@ -25,7 +29,7 @@ const CASE_STUDIES = [
     metricLabel: 'CPA Reduction',
     desc: 'Built an AI system that compresses weeks of customer research and creative development into under 5 minutes — delivering production-ready strategy grounded in real market intelligence.',
     href: '/work/ai-creative-system',
-    color: '#C8A96E',
+    color: '#7EC8C8',
   },
   {
     num: '002',
@@ -35,16 +39,6 @@ const CASE_STUDIES = [
     metricLabel: 'CPA Reduction',
     desc: 'LLM-powered research surfaced the #1 customer pain point the brand didn\'t know was losing them business. One insight. One message. Account-wide impact.',
     href: '/work/vet-chain',
-    color: '#7EC8C8',
-  },
-  {
-    num: '003',
-    title: 'The Revenue the Platform Couldn\'t See',
-    tag: 'Sono Bello · Instagram',
-    metric: '$50M',
-    metricLabel: 'Incremental Revenue',
-    desc: 'Synthetic control geo test revealed $50M in revenue completely invisible to touch-based attribution — and convinced stakeholders to act on the methodology.',
-    href: '/work/sono-bello',
     color: '#C8A96E',
   },
   {
@@ -58,25 +52,6 @@ const CASE_STUDIES = [
     color: '#7EC8C8',
   },
 ]
-
-const CustomTooltip = ({ active, payload }) => {
-  if (active && payload && payload.length) {
-    return (
-      <div style={{
-        background: '#0F0F0F',
-        border: '1px solid #C8A96E',
-        borderRadius: 8,
-        padding: '10px 14px',
-        fontFamily: "'DM Mono', monospace",
-        fontSize: 12,
-        color: '#C8A96E',
-      }}>
-        {payload[0].value}% CPA Reduction
-      </div>
-    )
-  }
-  return null
-}
 
 export default function Home() {
   return (
@@ -145,128 +120,6 @@ export default function Home() {
           Scroll
         </div>
       </section>
-
-      {/* RESULTS SNAPSHOT */}
-      <div className="section-alt">
-        <div className="section-alt-inner">
-          <div className="label">Results At A Glance</div>
-
-          {/* CPA Reduction Chart */}
-          <h2 style={{
-            fontFamily: "'Cormorant Garamond', serif",
-            fontSize: 'clamp(22px, 3.5vw, 32px)',
-            fontWeight: 600,
-            marginBottom: 8,
-          }}>Research-Led Creative.<br />Measurable CPA Impact.</h2>
-          <p style={{ fontSize: 12, color: '#555', marginBottom: 36, lineHeight: 1.7, maxWidth: 480 }}>
-            Two accounts. Two verticals. LLM-powered customer research translated directly into creative strategy — and account-wide CPA reductions.
-          </p>
-
-          <div style={{ height: 260, marginBottom: 8 }}>
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={cpaData} margin={{ top: 10, right: 20, left: 0, bottom: 10 }}>
-                <XAxis
-                  dataKey="name"
-                  tick={{ fill: '#555', fontSize: 11, fontFamily: "'DM Mono', monospace" }}
-                  axisLine={{ stroke: '#1A1A1A' }}
-                  tickLine={false}
-                />
-                <YAxis
-                  tick={{ fill: '#444', fontSize: 10, fontFamily: "'DM Mono', monospace" }}
-                  axisLine={false}
-                  tickLine={false}
-                  tickFormatter={v => `${v}%`}
-                  domain={[0, 30]}
-                />
-                <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(200,169,110,0.04)' }} />
-                <Bar dataKey="reduction" radius={[4, 4, 0, 0]}>
-                  {cpaData.map((entry, i) => (
-                    <Cell key={i} fill={entry.fill} />
-                  ))}
-                </Bar>
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
-
-          {/* Sono Bello — separate measurement story */}
-          <div style={{
-            marginTop: 48,
-            background: 'var(--bg-3)',
-            border: '1px solid #1A1A1A',
-            borderLeft: '3px solid #C8A96E',
-            borderRadius: 12,
-            padding: '28px 32px',
-          }}>
-            <div className="label" style={{ marginBottom: 12 }}>Measurement Case Study</div>
-            <h3 style={{
-              fontFamily: "'Cormorant Garamond', serif",
-              fontSize: 'clamp(20px, 3vw, 28px)',
-              fontWeight: 600,
-              color: '#E8E4DC',
-              marginBottom: 12,
-              lineHeight: 1.3,
-            }}>
-              The revenue the platform<br />
-              <em className="gold">couldn't see.</em>
-            </h3>
-            <p style={{ fontSize: 12, color: '#555', lineHeight: 1.8, marginBottom: 24, maxWidth: 500 }}>
-              A synthetic control geo test revealed $50M in incremental revenue at 3x ROI — entirely invisible to touch-based attribution. Sometimes the most important number is the one your dashboard isn't showing you.
-            </p>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: 16, maxWidth: 400 }}>
-              {[
-                { value: '$50M', label: 'Incremental revenue identified' },
-                { value: '3x', label: 'Return on ad spend' },
-                { value: '13%', label: 'Lift in targeted geos' },
-              ].map((s, i) => (
-                <div key={i} style={{ textAlign: 'center' }}>
-                  <div style={{
-                    fontFamily: "'Cormorant Garamond', serif",
-                    fontSize: 32,
-                    fontWeight: 700,
-                    color: '#C8A96E',
-                    lineHeight: 1,
-                    marginBottom: 6,
-                  }}>{s.value}</div>
-                  <div style={{ fontSize: 9, color: '#444', letterSpacing: '0.05em', lineHeight: 1.5 }}>{s.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Additional stats */}
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
-            gap: 16,
-            marginTop: 32,
-          }}>
-            {[
-              { value: '< 5min', label: 'Research to creative brief' },
-              { value: '10yr', label: 'Full-funnel experience' },
-              { value: '73%', label: 'Influencer DM acceptance rate' },
-              { value: '4', label: 'Verticals. One framework.' },
-            ].map((s, i) => (
-              <div key={i} style={{
-                background: 'var(--bg-3)',
-                border: '1px solid #1A1A1A',
-                borderRadius: 10,
-                padding: '20px',
-                textAlign: 'center',
-              }}>
-                <div style={{
-                  fontFamily: "'Cormorant Garamond', serif",
-                  fontSize: 32,
-                  fontWeight: 700,
-                  color: '#C8A96E',
-                  lineHeight: 1,
-                  marginBottom: 8,
-                }}>{s.value}</div>
-                <div style={{ fontSize: 10, color: '#444', letterSpacing: '0.05em', lineHeight: 1.5 }}>{s.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
 
       {/* CASE STUDY PREVIEWS */}
       <div className="section">
