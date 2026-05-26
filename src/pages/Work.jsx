@@ -4,7 +4,7 @@ const CASE_STUDIES = [
   {
     num: '003',
     title: 'The Revenue the Platform Couldn\'t See',
-    tags: ['Sono Bello', 'Instagram', 'Incrementality', 'Geo Testing'],
+    tags: ['Instagram', 'Incrementality', 'Geo Testing', 'Growth Marketing'],
     metric: '$50M',
     metricLabel: 'Incremental Revenue Projected',
     subMetric: '3x ROI · 13% geo lift',
@@ -28,7 +28,7 @@ const CASE_STUDIES = [
   {
     num: '002',
     title: 'Research-Led Creative Wins for Regional Vet Chain',
-    tags: ['Veterinary', 'Meta Ads', 'Creative Strategy'],
+    tags: ['Meta Ads', 'Creative Strategy', 'AI Workflow'],
     metric: '17%',
     metricLabel: 'Account-Wide CPA Reduction',
     subMetric: 'Single insight → winning campaign',
@@ -40,7 +40,7 @@ const CASE_STUDIES = [
   {
     num: '004',
     title: 'The Influencer Strategy That Required No Contracts',
-    tags: ['Wonderspaces', 'Instagram', 'Influencer', 'Organic'],
+    tags: ['Instagram', 'Influencer Marketing', 'Organic Growth'],
     metric: '73%',
     metricLabel: 'DM Acceptance Rate',
     subMetric: 'Millions of impressions · $0 fees',

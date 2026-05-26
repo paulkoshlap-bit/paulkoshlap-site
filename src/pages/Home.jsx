@@ -68,56 +68,24 @@ export default function Home() {
         margin: '0 auto',
         position: 'relative',
       }}>
-        <div className="label fade-up">paulkoshlap.com</div>
-
-        <h1 className="display fade-up fade-up-delay-1" style={{ marginBottom: 24, maxWidth: 700 }}>
+        <h1 className="display fade-up fade-up-delay-1" style={{ fontSize: 'clamp(28px, 6vw, 56px)', marginBottom: 24, maxWidth: 700 }}>
           Growth engineer who drives<br />
           <em className="gold">measurable business outcomes.</em>
         </h1>
 
-        <p className="fade-up fade-up-delay-2" style={{
-          fontSize: 14,
-          color: '#666',
-          lineHeight: 1.8,
-          maxWidth: 520,
-          marginBottom: 16,
-        }}>
+        <p style={{ fontSize: 14, color: '#888', lineHeight: 1.8, maxWidth: 520, marginBottom: 16 }}>
+          I'm a full-stack marketer — paid social, SEM, SEO, content, email, influencer, and organic — with 10 years of experience driving growth across DTC, B2B, and consumer brands.
+        </p>
+        <p style={{ fontSize: 14, color: '#777', lineHeight: 1.8, maxWidth: 520, marginBottom: 16 }}>
           Here's a distinction most marketers gloss over: the revenue Meta or Google reports back to you isn't the same as the revenue your campaigns actually generated.
         </p>
-
-        <p className="fade-up fade-up-delay-2" style={{
-          fontSize: 14,
-          color: '#555',
-          lineHeight: 1.8,
-          maxWidth: 520,
-          marginBottom: 40,
-        }}>
+        <p style={{ fontSize: 14, color: '#666', lineHeight: 1.8, maxWidth: 520, marginBottom: 40 }}>
           I build the frameworks to measure that difference — and use it to make smarter decisions about where money should actually go.
         </p>
 
         <div className="fade-up fade-up-delay-3" style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
           <Link to="/work" className="btn-primary">View My Work</Link>
           <Link to="/framework" className="btn-outline">See The Framework</Link>
-        </div>
-
-        <div style={{
-          position: 'absolute',
-          bottom: 40,
-          left: 40,
-          display: 'flex',
-          alignItems: 'center',
-          gap: 10,
-          color: '#2A2A2A',
-          fontSize: 10,
-          letterSpacing: '0.15em',
-          textTransform: 'uppercase',
-        }}>
-          <div style={{
-            width: 1,
-            height: 40,
-            background: 'linear-gradient(to bottom, #C8A96E, transparent)',
-          }} />
-          Scroll
         </div>
       </section>
 
