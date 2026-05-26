@@ -1,5 +1,5 @@
 const EXPERIENCE = [
-  { role: 'Senior Media Strategist', company: 'Overdrive Interactive', period: 'Current', desc: 'Full-funnel performance marketing strategy across paid social, SEM, and measurement infrastructure for national brands.' },
+  { role: 'Director of Paid Media', company: 'Overdrive Interactive', period: 'Current', desc: 'Full-funnel performance marketing strategy across paid social, SEM, and measurement infrastructure for national brands.' },
   { role: 'Associate Director, Paid Social', company: 'DEPT®', period: 'Prior', desc: 'Led paid social practice. Built and scaled performance marketing systems across Meta, TikTok, Pinterest, and Snapchat for enterprise clients.' },
   { role: 'Director of Marketing', company: 'Wonderspaces', period: 'Prior', desc: 'Directed full marketing function for national experiential art brand. Strategy, paid, organic, email, and brand.' },
   { role: 'Director, Social Media & eCommerce', company: 'CC Wellness', period: 'Prior', desc: 'Owned DTC growth across paid social and eCommerce for wellness brand. Built measurement infrastructure from ground up.' },
