@@ -44,13 +44,23 @@ export default function About() {
             <p style={{ fontSize: 14, color: '#777', lineHeight: 1.9, marginBottom: 20 }}>
               Before a single dollar is spent, I build the messaging architecture — mapping customer belief stages, identifying the narrative bridge, and developing creative strategy grounded in research rather than intuition. Great measurement tells you what worked. Great messaging strategy is why it worked in the first place.
             </p>
-            <p style={{ fontSize: 14, color: '#444', lineHeight: 1.9, marginBottom: 32, fontStyle: 'italic', fontFamily: "'Cormorant Garamond', serif", fontSize: 18 }}>
+            <p style={{ fontSize: 14, color: '#444', lineHeight: 1.9, marginBottom: 32 }}>
               "The writer in me shows up too. I believe clarity is a competitive advantage — in messaging, in strategy, and in how you present data to a room full of skeptics."
             </p>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-              {['Meta Certified Media Buying Pro', 'UC Berkeley Extension', 'UCSB Film & Media'].map(cert => (
-                <span key={cert} style={{ background: '#111', border: '1px solid #2A2A2A', borderRadius: 4, padding: '6px 12px', fontSize: 10, color: '#888' }}>{cert}</span>
-              ))}
+            <div className="label" style={{ marginBottom: 12 }}>Credentials & Education</div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+                <span style={{ fontSize: 12, color: '#999' }}>Meta Certified Media Buying Professional</span>
+                <span style={{ fontSize: 10, color: '#555', letterSpacing: '0.05em' }}>Certification</span>
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+                <span style={{ fontSize: 12, color: '#999' }}>Digital Marketing</span>
+                <span style={{ fontSize: 10, color: '#555', letterSpacing: '0.05em' }}>UC Berkeley Extension</span>
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+                <span style={{ fontSize: 12, color: '#999' }}>Film & Media Studies</span>
+                <span style={{ fontSize: 10, color: '#555', letterSpacing: '0.05em' }}>UC Santa Barbara</span>
+              </div>
             </div>
           </div>
         </div>
