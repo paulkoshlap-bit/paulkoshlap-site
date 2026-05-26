@@ -157,7 +157,7 @@ export default function Framework() {
             Ready to apply this<br /><em className="gold">to your business?</em>
           </h2>
           <p style={{ fontSize: 12, color: '#555', marginBottom: 28, lineHeight: 1.7 }}>The framework is the system. Let's talk about how it applies to your specific growth challenges.</p>
-          <a href="mailto:paul@paulkoshlap.com" className="btn-primary">Let's Talk →</a>
+          <a href="mailto:paulkoshlap@gmail.com" className="btn-primary">Let's Talk →</a>
         </div>
       </div>
     </div>

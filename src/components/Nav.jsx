@@ -9,7 +9,6 @@ export default function Nav() {
     { label: 'Work', href: '/work' },
     { label: 'Framework', href: '/framework' },
     { label: 'About', href: '/about' },
-    { label: 'Services', href: '/services' },
   ]
 
   return (
@@ -36,7 +35,7 @@ export default function Nav() {
         Paul Koshlap
       </Link>
 
-      <div style={{ display: 'flex', alignItems: 'center', gap: 32 }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 40 }}>
         {links.map(link => (
           <Link
             key={link.href}
@@ -45,7 +44,7 @@ export default function Nav() {
               fontSize: 10,
               letterSpacing: '0.15em',
               textTransform: 'uppercase',
-              color: location.pathname.startsWith(link.href) ? '#C8A96E' : '#444',
+              color: location.pathname.startsWith(link.href) ? '#C8A96E' : '#555',
               transition: 'color 0.2s ease',
               fontFamily: "'DM Mono', monospace",
             }}
@@ -53,9 +52,7 @@ export default function Nav() {
             {link.label}
           </Link>
         ))}
-        <Link to="/#contact" className="btn-primary" style={{ padding: '8px 18px', fontSize: 11 }}>
-          Let's Talk
-        </Link>
+        <a href="mailto:paulkoshlap@gmail.com" className="btn-primary" style={{ padding: '8px 18px', fontSize: 11 }}>Let's Talk</a>
       </div>
     </nav>
   )
