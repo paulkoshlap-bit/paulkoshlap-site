@@ -44,8 +44,8 @@ export default function About() {
             <p style={{ fontSize: 14, color: '#777', lineHeight: 1.9, marginBottom: 20 }}>
               Before a single dollar is spent, I build the messaging architecture — mapping customer belief stages, identifying the narrative bridge, and developing creative strategy grounded in research rather than intuition. Great measurement tells you what worked. Great messaging strategy is why it worked in the first place.
             </p>
-            <p style={{ fontSize: 14, color: '#444', lineHeight: 1.9, marginBottom: 32 }}>
-              "The writer in me shows up too. I believe clarity is a competitive advantage — in messaging, in strategy, and in how you present data to a room full of skeptics."
+            <p style={{ fontSize: 14, color: '#777', lineHeight: 1.9, marginBottom: 32 }}>
+              The writer in me shows up too. I believe clarity is a competitive advantage — in messaging, in strategy, and in how you present data to a room full of skeptics.
             </p>
             <div className="label" style={{ marginBottom: 12 }}>Credentials & Education</div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
