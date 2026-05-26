@@ -7,9 +7,9 @@ const EXPERIENCE = [
 ]
 
 const SKILLS = [
-  { cat: 'Measurement & Analytics', items: ['Media Mix Modeling (MMM)', 'Incrementality Testing', 'Synthetic Control Geo Tests', 'Attribution Frameworks', 'KPI Framework Design', 'Marketing Analytics'] },
+  { cat: 'Measurement & Analytics', items: ['Media Mix Modeling (interpretation & application)', 'Incrementality Testing', 'Synthetic Control Geo Tests', 'Attribution Frameworks', 'KPI Framework Design', 'Marketing Analytics'] },
   { cat: 'Paid Media', items: ['Meta Ads', 'Google Ads', 'TikTok Ads', 'Pinterest Ads', 'Snapchat Ads', 'LinkedIn Ads', 'Programmatic'] },
-  { cat: 'Strategy', items: ['Full-Funnel Marketing', 'Go-To-Market Strategy', 'Creative Strategy', 'Messaging Strategy', 'Brand Strategy', 'Customer Journey Mapping'] },
+  { cat: 'Full-Stack Marketing', items: ['Full-Funnel Marketing', 'Go-To-Market Strategy', 'Creative Strategy', 'Messaging Strategy', 'Brand Strategy', 'Customer Journey Mapping', 'Content Marketing', 'Organic Social', 'Email Marketing', 'Influencer Marketing'] },
   { cat: 'AI & Systems', items: ['AI Workflow Integration', 'LLM Research Systems', 'Marketing Automation', 'Generative AI for Creative', 'AI-Native Strategy'] },
 ]
 
@@ -22,26 +22,26 @@ export default function About() {
           Paul Koshlap
         </h1>
         <div style={{ display: 'inline-flex', flexWrap: 'wrap', gap: 8, marginBottom: 48 }}>
-          <span className="badge">Marketing Director</span>
-          <span className="badge">Cross-Channel Growth Strategist</span>
+          <span className="badge">Full-Stack Marketer</span>
+          <span className="badge">Growth Strategist</span>
           <span className="badge badge-teal">AI-Native</span>
           <span className="badge">Meta Certified</span>
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 48, marginBottom: 80 }}>
           <div>
-            <p style={{ fontSize: 14, color: '#888', lineHeight: 1.9, marginBottom: 20 }}>
-              I'm a full-funnel digital marketing strategist with 10 years of experience across paid social, SEM, SEO, email, and content — backed by a deep foundation in data analysis, messaging strategy, and copywriting.
+            <p style={{ fontSize: 14, color: '#999', lineHeight: 1.9, marginBottom: 20 }}>
+              I'm a full-stack marketer and growth strategist with 10 years of experience across every major channel — paid, organic, content, email, and influencer — backed by a deep foundation in measurement, messaging strategy, and copywriting.
             </p>
-            <p style={{ fontSize: 14, color: '#666', lineHeight: 1.9, marginBottom: 20 }}>
+            <p style={{ fontSize: 14, color: '#888', lineHeight: 1.9, marginBottom: 20 }}>
               What actually sets me apart is what happens after the campaign launches. I build measurement infrastructure. I design incrementality testing frameworks. I work with analytics teams to move past platform-reported vanity metrics toward a clear, defensible picture of what's actually driving growth.
             </p>
-            <p style={{ fontSize: 14, color: '#555', lineHeight: 1.9 }}>
+            <p style={{ fontSize: 14, color: '#777', lineHeight: 1.9 }}>
               I'm also deeply AI-native — I've built real workflows, frameworks, and systems that integrate AI into strategy, creative development, and analytics in ways that change what's possible. AI fluency and first-principles thinking are inseparable for me — because the people who get the most from AI aren't the ones who learned the tools, they're the ones who understand how to reason from fundamentals to build systems others can't replicate. I design measurement systems and use AI to execute at a level that previously required a dedicated data science team.
             </p>
           </div>
           <div>
-            <p style={{ fontSize: 14, color: '#555', lineHeight: 1.9, marginBottom: 20 }}>
+            <p style={{ fontSize: 14, color: '#777', lineHeight: 1.9, marginBottom: 20 }}>
               Before a single dollar is spent, I build the messaging architecture — mapping customer belief stages, identifying the narrative bridge, and developing creative strategy grounded in research rather than intuition. Great measurement tells you what worked. Great messaging strategy is why it worked in the first place.
             </p>
             <p style={{ fontSize: 14, color: '#444', lineHeight: 1.9, marginBottom: 32, fontStyle: 'italic', fontFamily: "'Cormorant Garamond', serif", fontSize: 18 }}>
@@ -49,7 +49,7 @@ export default function About() {
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
               {['Meta Certified Media Buying Pro', 'UC Berkeley Extension', 'UCSB Film & Media'].map(cert => (
-                <span key={cert} style={{ background: '#0F0F0F', border: '1px solid #1E1E1E', borderRadius: 4, padding: '5px 10px', fontSize: 10, color: '#444' }}>{cert}</span>
+                <span key={cert} style={{ background: '#111', border: '1px solid #2A2A2A', borderRadius: 4, padding: '6px 12px', fontSize: 10, color: '#888' }}>{cert}</span>
               ))}
             </div>
           </div>
@@ -77,7 +77,7 @@ export default function About() {
                   </div>
                   <span style={{ fontSize: 10, color: '#333', letterSpacing: '0.05em' }}>{exp.period}</span>
                 </div>
-                <p style={{ fontSize: 12, color: '#555', lineHeight: 1.6 }}>{exp.desc}</p>
+                <p style={{ fontSize: 12, color: '#777', lineHeight: 1.6 }}>{exp.desc}</p>
               </div>
             ))}
           </div>
@@ -118,9 +118,9 @@ export default function About() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(24px, 4vw, 36px)', fontWeight: 600, marginBottom: 16 }}>
             Let's work together
           </h2>
-          <p style={{ fontSize: 12, color: '#555', marginBottom: 28, lineHeight: 1.7 }}>Open to full-time roles and independent consulting engagements.</p>
+          <p style={{ fontSize: 12, color: '#777', marginBottom: 28, lineHeight: 1.7 }}>Open to full-time roles and independent consulting engagements.</p>
           <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="mailto:paul@paulkoshlap.com" className="btn-primary">Get In Touch</a>
+            <a href="mailto:paulkoshlap@gmail.com" className="btn-primary">Get In Touch</a>
             <a href="https://linkedin.com/in/paulkoshlap" className="btn-outline" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </div>

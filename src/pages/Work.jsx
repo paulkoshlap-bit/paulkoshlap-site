@@ -2,6 +2,18 @@ import { Link } from 'react-router-dom'
 
 const CASE_STUDIES = [
   {
+    num: '003',
+    title: 'The Revenue the Platform Couldn\'t See',
+    tags: ['Sono Bello', 'Instagram', 'Incrementality', 'Geo Testing'],
+    metric: '$50M',
+    metricLabel: 'Incremental Revenue Projected',
+    subMetric: '3x ROI · 13% geo lift',
+    desc: 'Synthetic control geo test revealed $50M in revenue completely invisible to touch-based attribution — and a stakeholder education effort that changed how the client thinks about measurement.',
+    href: '/work/sono-bello',
+    color: '#C8A96E',
+    framework: ['02 Customer Research', '04 Channel Strategy', '05 Activation', '06 Reporting', '07 Optimization'],
+  },
+  {
     num: '001',
     title: 'AI-Powered Creative Strategy System',
     tags: ['Multi-Vertical', 'Meta Ads', 'AI Workflows'],
@@ -26,16 +38,16 @@ const CASE_STUDIES = [
     framework: ['02 Customer Research', '03 Messaging Strategy', '05 Activation', '06 Reporting'],
   },
   {
-    num: '003',
-    title: 'The Revenue the Platform Couldn\'t See',
-    tags: ['Sono Bello', 'Instagram', 'Incrementality', 'Geo Testing'],
-    metric: '$50M',
-    metricLabel: 'Incremental Revenue Projected',
-    subMetric: '3x ROI · 13% geo lift',
-    desc: 'Synthetic control geo test revealed $50M in revenue completely invisible to touch-based attribution — and a stakeholder education effort that changed how the client thinks about measurement.',
-    href: '/work/sono-bello',
-    color: '#C8A96E',
-    framework: ['02 Customer Research', '04 Channel Strategy', '05 Activation', '06 Reporting', '07 Optimization'],
+    num: '004',
+    title: 'The Influencer Strategy That Required No Contracts',
+    tags: ['Wonderspaces', 'Instagram', 'Influencer', 'Organic'],
+    metric: '73%',
+    metricLabel: 'DM Acceptance Rate',
+    subMetric: 'Millions of impressions · $0 fees',
+    desc: 'Zero-contract influencer system using hashtag-driven discovery and genuine engagement signal analysis. Millions of organic impressions per month across 3 locations at effectively zero cost.',
+    href: '/work/wonderspaces',
+    color: '#7EC8C8',
+    framework: ['02 Customer Research', '03 Messaging Strategy', '05 Activation'],
   },
 ]
 
