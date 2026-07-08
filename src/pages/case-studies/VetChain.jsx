@@ -18,7 +18,7 @@ export default function CaseStudyVetChain() {
     <div style={{ paddingTop: 60 }}>
       <div style={{ padding: '80px 40px 60px', maxWidth: 900, margin: '0 auto' }}>
         <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginBottom: 24 }}>
-          <span className="badge">Regional Veterinary Chain · Anonymous</span>
+          <span className="badge">DTC · Local Services (Healthcare)</span>
           <span className="badge badge-teal">Meta Ads · Creative Strategy</span>
           <span className="badge">Case Study 002</span>
         </div>
