@@ -8,8 +8,8 @@ import About from './pages/About'
 import Services from './pages/Services'
 import AICreativeSystem from './pages/case-studies/AICreativeSystem'
 import VetChain from './pages/case-studies/VetChain'
-import SonoBello from './pages/case-studies/SonoBello'
-import Wonderspaces from './pages/case-studies/Wonderspaces'
+import IncrementalityHealth from './pages/case-studies/IncrementalityHealth'
+import ImmersiveExperiences from './pages/case-studies/ImmersiveExperiences'
 
 export default function App() {
   return (
@@ -21,8 +21,8 @@ export default function App() {
           <Route path="/work" element={<Work />} />
           <Route path="/work/ai-creative-system" element={<AICreativeSystem />} />
           <Route path="/work/vet-chain" element={<VetChain />} />
-          <Route path="/work/sono-bello" element={<SonoBello />} />
-          <Route path="/work/wonderspaces" element={<Wonderspaces />} />
+          <Route path="/work/incrementality-health" element={<IncrementalityHealth />} />
+          <Route path="/work/immersive-experiences" element={<ImmersiveExperiences />} />
           <Route path="/framework" element={<Framework />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
