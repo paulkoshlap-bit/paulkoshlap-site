@@ -12,9 +12,9 @@ const cpaData = [
 ]
 
 const VERTICALS = [
-  { id: 'dtc', label: 'DTC Medical & Wellness', icon: '◈', challenge: 'High-consideration, emotion-driven purchases with complex belief journeys and regulatory sensitivity.', insight: 'Multi-segment journey maps revealed 4 distinct belief stages with fundamentally different messaging needs — impossible to surface without systematic research.' },
+  { id: 'dtc', label: 'DTC Consumer Health & Wellness', icon: '◈', challenge: 'High-consideration, emotion-driven purchases with complex belief journeys and regulatory sensitivity.', insight: 'Multi-segment journey maps revealed 4 distinct belief stages with fundamentally different messaging needs — impossible to surface without systematic research.' },
   { id: 'saas', label: 'B2B SaaS', icon: '◎', challenge: 'Multiple buyer personas at different awareness stages, each requiring distinct messaging to move the pipeline.', insight: 'Segmentation surfaced 3 distinct buyer archetypes requiring completely separate creative tracks.' },
-  { id: 'vet', label: 'Veterinary Chain', icon: '✦', challenge: 'Trust-based decisions with strong emotional components. Geographic expansion with local authenticity tension.', insight: 'Journey mapping surfaced proactive wellness vs. reactive emergency as the central unmet messaging need.' },
+  { id: 'vet', label: 'Local Services (Healthcare)', icon: '✦', challenge: 'Trust-based decisions with strong emotional components. Geographic expansion with local authenticity tension.', insight: 'Journey mapping surfaced proactive wellness vs. reactive emergency as the central unmet messaging need.' },
 ]
 
 export default function CaseStudyAICreative() {
