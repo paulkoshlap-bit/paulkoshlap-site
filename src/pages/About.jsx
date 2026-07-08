@@ -1,5 +1,6 @@
 const EXPERIENCE = [
-  { role: 'Director of Paid Media', company: 'Overdrive Interactive', period: 'Current', desc: 'Full-funnel performance marketing strategy across paid social, SEM, and measurement infrastructure for national brands.' },
+  { role: 'Head of Paid Social', company: 'Yall', period: 'Current', desc: 'Lead paid social strategy and execution at a creative-focused digital marketing agency.' },
+  { role: 'Director of Paid Media', company: 'Overdrive Interactive', period: 'Recent', desc: 'Full-funnel performance marketing strategy across paid social, SEM, and measurement infrastructure for national brands.' },
   { role: 'Associate Director, Paid Social', company: 'DEPT®', period: 'Prior', desc: 'Led paid social practice. Built and scaled performance marketing systems across Meta, TikTok, Pinterest, and Snapchat for enterprise clients.' },
   { role: 'Director of Marketing', company: 'Wonderspaces', period: 'Prior', desc: 'Directed full marketing function for national experiential art brand. Strategy, paid, organic, email, and brand.' },
   { role: 'Director, Social Media & eCommerce', company: 'CC Wellness', period: 'Prior', desc: 'Owned DTC growth across paid social and eCommerce for wellness brand. Built measurement infrastructure from ground up.' },
@@ -128,7 +129,7 @@ export default function About() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(24px, 4vw, 36px)', fontWeight: 600, marginBottom: 16 }}>
             Let's work together
           </h2>
-          <p style={{ fontSize: 12, color: '#777', marginBottom: 28, lineHeight: 1.7 }}>Open to full-time roles and independent consulting engagements.</p>
+          <p style={{ fontSize: 12, color: '#777', marginBottom: 28, lineHeight: 1.7 }}>Open to independent consulting engagements and select opportunities.</p>
           <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="mailto:paulkoshlap@gmail.com" className="btn-primary">Get In Touch</a>
             <a href="https://linkedin.com/in/paulkoshlap" className="btn-outline" target="_blank" rel="noreferrer">LinkedIn</a>
