@@ -25,7 +25,7 @@ export default function CaseStudyAICreative() {
     <div style={{ paddingTop: 60 }}>
       <div style={{ padding: '80px 40px 60px', maxWidth: 900, margin: '0 auto' }}>
         <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginBottom: 24 }}>
-          <span className="badge">Multi-Vertical</span>
+          <span className="badge">DTC + B2B · Multi-Vertical</span>
           <span className="badge badge-teal">AI Workflows · Creative Strategy</span>
           <span className="badge">Case Study 001</span>
         </div>
